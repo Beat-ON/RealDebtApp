@@ -11,5 +11,5 @@ interface KirimDao {
     @Query("select * from qarizlar")
     fun getAllKirim():List<KirimData>
     @Insert
-    fun insert(insertKirim:KirimData)
+    fun insert(kirimITEMS: KirimData)
 }

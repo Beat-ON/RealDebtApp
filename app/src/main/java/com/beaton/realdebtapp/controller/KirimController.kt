@@ -1,8 +1,5 @@
 package com.beaton.realdebtapp.controller
 
-import android.app.AlertDialog
-import android.app.Dialog
-import android.content.Context
 import androidx.room.Room
 import com.beaton.realdebtapp.MainActivity
 import com.beaton.realdebtapp.R
@@ -47,13 +44,13 @@ class KirimController(val mainActivity: MainActivity, val kirimFragment: KirimFr
     }
     fun save_bottom_kirim(){
         var kirimITEMS = KirimData(0,
-            mainActivity.kd_et_from_came.text.toString(),
-            mainActivity.kd_et_summa.text.toString(),
-            mainActivity.kd_et_date.text.toString(),
-            mainActivity.kd_et_description.text.toString())
+            mainActivity.kd_et_from_came?.text.toString(),
+            mainActivity.kd_et_summa?.text.toString(),
+            mainActivity.kd_et_date?.text.toString(),
+            mainActivity.kd_et_description?.text.toString())
 
 
-        mainActivity.kd_et_button.setOnClickListener {
+        mainActivity.kd_et_button?.setOnClickListener {
             dao.insert(kirimITEMS)
         }
     }
