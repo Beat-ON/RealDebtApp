@@ -42,4 +42,5 @@ class KirimFragment(val activity: MainActivity) : Fragment(R.layout.fragment_kir
     }
 
 
+
 }

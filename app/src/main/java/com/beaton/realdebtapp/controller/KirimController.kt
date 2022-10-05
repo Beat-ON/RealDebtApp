@@ -43,7 +43,7 @@ class KirimController(val mainActivity: MainActivity, val kirimFragment: KirimFr
         }
     }
     fun save_bottom_kirim(){
-        var kirimITEMS = KirimData(0,
+        var kirimItems = KirimData(0,
             mainActivity.kd_et_from_came?.text.toString(),
             mainActivity.kd_et_summa?.text.toString(),
             mainActivity.kd_et_date?.text.toString(),
@@ -51,12 +51,7 @@ class KirimController(val mainActivity: MainActivity, val kirimFragment: KirimFr
 
 
         mainActivity.kd_et_button?.setOnClickListener {
-            dao.insert(kirimITEMS)
+            dao.insert(kirimItems)
         }
     }
-
-
-
-
-
 }

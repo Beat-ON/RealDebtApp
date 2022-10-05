@@ -6,6 +6,8 @@ import com.beaton.realdebtapp.controller.KirimController
 import com.beaton.realdebtapp.database.KriimDatabase
 import com.beaton.realdebtapp.fragments.KirimFragment
 import com.beaton.realdebtapp.model.KirimData
+import kotlinx.android.synthetic.main.item_menu.*
+import kotlinx.android.synthetic.main.kirim_dialog.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         contoller_nav.nav_press()
         kirimFragment.add_button_working()
         contoller_nav.save_bottom_kirim()
+
 
 
 

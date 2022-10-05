@@ -17,6 +17,8 @@
             android:id="@+id/kd_et_from_came"
             android:layout_width="80dp"
             android:layout_height="40dp"
+            android:textSize="14dp"
+            android:hint="from_came"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,6 +26,8 @@
             android:id="@+id/kd_et_summa"
             android:layout_width="80dp"
             android:layout_height="40dp"
+            android:textSize="14dp"
+            android:hint="summa"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,6 +35,8 @@
             android:id="@+id/kd_et_date"
             android:layout_width="80dp"
             android:layout_height="40dp"
+            android:textSize="14dp"
+            android:hint="date"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/kd_et_from_came" />
@@ -39,6 +45,8 @@
             android:id="@+id/kd_et_description"
             android:layout_width="80dp"
             android:layout_height="40dp"
+            android:textSize="14dp"
+            android:hint="description"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/kd_et_summa" />
@@ -47,6 +55,8 @@
             android:id="@+id/kd_et_button"
             android:layout_width="70dp"
             android:layout_height="40dp"
+            android:textSize="10dp"
+            android:text="Save"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/kd_et_button2" />
@@ -55,6 +65,8 @@
             android:id="@+id/kd_et_button2"
             android:layout_width="70dp"
             android:layout_height="40dp"
+            android:textSize="8dp"
+            android:text="cancel"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/kd_et_button"
             app:layout_constraintStart_toStartOf="parent" />

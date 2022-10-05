@@ -18,6 +18,7 @@ class KirimAdapter:RecyclerView.Adapter<KirimAdapter.KirimViewHolder>() {
 
     inner class KirimViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         fun setData(kirim_data:KirimData){
+            itemView.item_tv_id.text = kirim_data.id.toString()
             itemView.item_tv_from_came?.text = kirim_data.firstCame
             itemView.item_tv_summa?.text = kirim_data.summa
             itemView.item_tv_date?.text = kirim_data.date
